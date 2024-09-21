@@ -6,6 +6,8 @@ Resume data taken from: https://www.kaggle.com/datasets/snehaanbhawal/resume-dat
 
 **Codebase**
 - given in ipynb format for better understanding of the code
+- to test the working of model, query can be passed to the rag pipeline and output can be generated. A working example is shown in the notebook.
+- ipynb notebook can be downloaded and can be executed using google colab or jupyter notebook
 
 In this there's a file titled "Resume.csv". It has 4 columns. Resume ID, Resume_str, resume_html, and category. For the purpose of this assignment, I used ID and Resume_str data.
 I used pandas library to clean the data. For tokenization and segmenting, I used Named Entity Recognition (NER) to extract sections like skills, experience, education, etc. NER will help identify different sections of the resume such as names, organizations, locations, and job titles. I used spaCy for this. This approach extracts important entities (e.g., names, companies, etc.) from each resume and can be used to segment resumes into meaningful sections.
